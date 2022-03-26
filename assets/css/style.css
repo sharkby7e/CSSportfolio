@@ -1,0 +1,68 @@
+:root{
+  --mainDark : #232B36;
+  --mainLight: #E5DBBF;
+  --secDark: #415B75;
+  --secLight: #9494A7;
+  --accent: #C0CFC7;
+
+}
+
+html {
+  font-family: "Work Sans";
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--mainDark);
+}
+
+h1,
+h2, 
+h3,
+h4, 
+h5, 
+h6 {
+  margin-bottom: 5px;
+  color: var(--mainLight);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+header {
+  display: flex;
+  width: 98%;
+  margin: 7px;
+  justify-content: space-between;
+}
+
+header nav {
+  font-size: 24px; 
+  padding: 19px;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header li {
+  display: inline-block;
+  margin-left: 25px;
+  bottom: 0;
+}
+
+header li a{
+  color: var(--mainLight);
+  text-decoration: none;
+}
