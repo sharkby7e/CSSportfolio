@@ -49,7 +49,7 @@ header {
 
 header nav {
   font-size: 24px; 
-  padding: 19px;
+  padding: 30px;
 }
 
 header ul {
@@ -65,4 +65,10 @@ header li {
 header li a{
   color: var(--mainLight);
   text-decoration: none;
+}
+
+.emptyBox {
+  height: 8px;
+  background-color: var(--secLight);
+  border-width: 3px; 
 }
