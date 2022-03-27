@@ -76,11 +76,14 @@ header li a{
 
 main {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .mainProjHolder {
   flex-grow: 1;
   margin: 15px;
-  max-width: 50%;
+  max-width: 100%;
   margin: 12px;
 }
 
@@ -91,11 +94,13 @@ main {
 
 .lilProjHolder {
   flex-grow: 2;
-  max-width: 50%;  
+  max-width: 100%;  
   flex-direction: row;
   flex-wrap: wrap;
   display: flex;
   margin: 12px;
+  align-items: center;
+  justify-content: center;
 }
 
 .lilProjCard {
@@ -112,11 +117,15 @@ main {
   background-color: white;
   display: flex;
   max-height: 400px;
+  max-width: 100%;
 }
 
 #aboutMe p {
   color: var(--secDark);
+  max-width: 67%;
+  font-size: 36px;
 }
 #aboutMe img {
- object-fit: contain; 
+  object-fit: contain; 
+  max-width: 33%;
 }
