@@ -76,7 +76,6 @@ header li a{
 
 main {
   display: flex;
-  max-height: 400px;
 }
 .mainProjHolder {
   flex-grow: 1;
@@ -107,4 +106,17 @@ main {
 .lilProjCard  img {
   object-fit: contain;
   max-width: 100%;
+}
+
+#aboutMe {
+  background-color: white;
+  display: flex;
+  max-height: 400px;
+}
+
+#aboutMe p {
+  color: var(--secDark);
+}
+#aboutMe img {
+ object-fit: contain; 
 }
