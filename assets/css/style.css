@@ -50,7 +50,6 @@ header {
 
 header nav {
   font-size: 24px; 
-  /* padding: 30px; */
 }
 
 header ul {
@@ -68,10 +67,6 @@ header li a{
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  object-fit: contain;
-}
 .emptyBox {
   height: 6px;
   background-color: var(--secLight);
@@ -83,11 +78,33 @@ main {
   display: flex;
   max-height: 400px;
 }
-.mainProj {
+.mainProjHolder {
   flex-grow: 1;
+  margin: 15px;
+  max-width: 50%;
+  margin: 12px;
 }
 
-.lilProj {
+.mainProjHolder img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.lilProjHolder {
   flex-grow: 2;
+  max-width: 50%;  
+  flex-direction: row;
+  flex-wrap: wrap;
   display: flex;
+  margin: 12px;
+}
+
+.lilProjCard {
+  max-width: 48%;
+  margin: 6px;
+}
+
+.lilProjCard  img {
+  object-fit: contain;
+  max-width: 100%;
 }
