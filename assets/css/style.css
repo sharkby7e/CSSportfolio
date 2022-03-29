@@ -23,21 +23,13 @@ h4,
 h5, 
 h6 {
   margin-bottom: 5px;
-  color: var(--mainLight);
+  color: var(--mainDark);
   font-weight: 700;
   line-height: 1.1;
 }
 
 h1 {
   font-size: 4rem;
-}
-
-h2 {
-  font-size: 3.5rem;
-}
-
-h3 {
-  font-size: 3rem;
 }
 
 header {
@@ -50,6 +42,7 @@ header {
 
 header h1 {
   margin: 1%;
+  color: var(--mainLight);
 }
 
 header nav {
@@ -101,6 +94,7 @@ main {
   margin: 1%;
 }
 
+ 
 .lilProjHolder {
   display: flex;
   max-width: 100%;  
@@ -120,13 +114,49 @@ main {
   justify-content: center;
   transition: .8s ease-in-out;
   display: flex;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--secLight);
+  object-fit: contain;
+}
+
+.first {
+  text-decoration: none;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); 
+  font-size: 36px;
+}
+
+.second {
+  text-decoration: none;
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); 
+  font-size: 36px;
+}
+
+.lilProjCard:hover .overlay {
+  opacity: .9;
 }
 
 .lilProjCard  img {
   object-fit: contain;
-  max-width: 96%;
-  padding: 1%;
-  margin: 1%;
+  max-width: 100%;
 }
 
 #aboutMe {
@@ -154,6 +184,27 @@ main {
   max-width: 33%;
 }
 
+#contact {
+  background-color: var(--accent);
+  display: flex; 
+  flex-direction: row;
+  border-radius: 10px;
+  border: solid 9px var(--secLight);
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#contact h2 {
+  font-size: 36px;
+  margin: 2%;
+  z-index: 2;
+}
+
+#contact p {
+  color: var(--mainDark);
+  font-size: 24px;
+  margin: 2%
+}
 
 @media screen and (max-width: 968px) {
   .lilProjCard {
