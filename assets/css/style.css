@@ -43,9 +43,13 @@ h3 {
 header {
   display: flex;
   width: 98%;
-  margin: 7px;
   justify-content: space-between;
+  margin-bottom:1%;
   align-items: flex-end;
+}
+
+header h1 {
+  margin: 1%;
 }
 
 header nav {
@@ -59,7 +63,6 @@ header ul {
 header li {
   display: inline-block;
   margin-left: 25px;
-  bottom: 0;
 }
 
 header li a{
@@ -80,52 +83,84 @@ main {
   align-items: center;
   justify-content: center;
 }
+
 .mainProjHolder {
-  flex-grow: 1;
-  margin: 15px;
+  margin: 2%;
   max-width: 100%;
-  margin: 12px;
+  background-color: var(--accent);
+  border-radius: 10px;
+  border: solid 9px var(--secLight);
+  display: flex; 
+  justify-content: center;
 }
 
 .mainProjHolder img {
   object-fit: contain;
-  max-width: 100%;
+  padding: 1%;
+  max-width: 96%;
+  margin: 1%;
 }
 
 .lilProjHolder {
-  flex-grow: 2;
+  display: flex;
   max-width: 100%;  
   flex-direction: row;
   flex-wrap: wrap;
-  display: flex;
-  margin: 12px;
+  margin: 15px;
   align-items: center;
   justify-content: center;
+  background-color: var(--accent);
+  border-radius: 10px;
+  border: solid 9px var(--secLight)
 }
 
 .lilProjCard {
   max-width: 48%;
-  margin: 6px;
+  margin: 1%;
+  justify-content: center;
+  transition: .8s ease-in-out;
+  display: flex;
 }
 
 .lilProjCard  img {
   object-fit: contain;
-  max-width: 100%;
+  max-width: 96%;
+  padding: 1%;
+  margin: 1%;
 }
 
 #aboutMe {
-  background-color: var(--mainLight);
+  background-color: var(--accent);
   display: flex;
-  max-height: 400px;
+  margin: 1%;
   max-width: 100%;
+  border-radius: 10px;
+  border: solid 9px var(--secLight)
 }
 
 #aboutMe p {
   color: var(--secDark);
   max-width: 67%;
-  font-size: 36px;
+  margin: 1%;
+  max-height: 100%;
+  font-size: 2.25vw;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 #aboutMe img {
   object-fit: contain; 
   max-width: 33%;
+}
+
+
+@media screen and (max-width: 968px) {
+  .lilProjCard {
+    max-width: 98%;
+    margin: 1%;
+  }
+  #aboutMe p {
+    font-size: 3vw
+  }
 }
