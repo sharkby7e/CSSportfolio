@@ -25,9 +25,6 @@ h3 {
   line-height: 1.1;
 }
 
-h1 {
-  font-size: 4rem;
-}
 
 header {
   display: flex;
@@ -40,6 +37,7 @@ header {
 header h1 {
   margin: 1%;
   color: var(--mainLight);
+  font-size: 58px
 }
 
 header nav {
@@ -81,8 +79,21 @@ main {
   border-radius: 10px;
   border: solid 9px var(--secLight);
   display: flex; 
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   position: relative; 
+}
+
+.mainProjHolder h2 {
+  z-index: 2;
+  font-size: 48px;
+  color: var(--mainDark);
+  background-color: var(--secLight);
+  transition: .8s ease;
+  position: absolute;
+  margin-bottom: 0;
+  border-top: 3px solid var(--mainDark); 
+  border-right: 3px solid var(--mainDark);
 }
 
 .mainProjHolder img {
@@ -92,6 +103,17 @@ main {
   margin: 1%;
 }
 
+.mainProjHolder:hover h2 {
+  background-color: transparent;
+  justify-content: flex-start;
+  border-style: none;
+  margin-bottom:1%;
+  margin-left:1%;
+}
+
+.mainProjHolder:hover .overlay {
+  opacity: .9;
+}
  
 .lilProjHolder {
   display: flex;
@@ -115,6 +137,25 @@ main {
   position: relative;
 }
 
+.lilProjCard h2 {
+  z-index: 2;
+  font-size: 36px;
+  color: var(--mainDark);
+  background-color: var(--accent); 
+  border-top: 3px solid var(--secLight);
+  border-right: 3px solid var(--secLight);
+  transition: .8s ease;
+  margin-bottom: 0;
+  position: absolute;
+  bottom:0;
+  left:0; 
+}
+
+.lilProjCard  img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -123,9 +164,11 @@ main {
   right: 0;
   max-width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: .8s ease;
   background-color: var(--secLight);
   object-fit: contain;
+  display: flex;
+  justify-content: center
 }
 
 .first {
@@ -154,13 +197,11 @@ main {
   opacity: .92;
 }
 
-.mainProjHolder:hover .overlay {
-  opacity: .9;
-}
-
-.lilProjCard  img {
-  object-fit: contain;
-  max-width: 100%;
+.lilProjCard:hover h2 {
+  border-style: none;
+  background-color: transparent;
+  margin-bottom:1%;
+  margin-left:1%;
 }
 
 #aboutMe {
@@ -201,7 +242,7 @@ main {
   margin: 2%;
 }
 
-#contact h2 {
+#contact h3 {
   font-size: 36px;
   flex: 1 1 auto;
   margin: 2%;
