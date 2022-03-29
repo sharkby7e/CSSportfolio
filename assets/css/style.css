@@ -212,22 +212,34 @@ main {
   color: var(--mainDark);
   flex: 1 1 auto;
   font-size: 2vw;
-  margin: 2%
+  margin: 2%;
+  white-space: wrap;
 }
 
 #contact a {
   color: var(--mainDark);
   flex: 1 1 auto;
   font-size: 2vw;
-  margin: 2%
+  margin: 2%;
+  white-space: wrap;
 }
 
 @media screen and (max-width: 968px) {
+  #aboutMe p {
+    font-size: 3vw
+  }
+
   .lilProjCard {
     max-width: 98%;
     margin: 1%;
   }
-  #aboutMe p {
-    font-size: 3vw
+
+  #contact a {
+    font-size: 1.5vw
   }
+
+  #contact p {
+    font-size: 1.5vw
+  }
+
 }
