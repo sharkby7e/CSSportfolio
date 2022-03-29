@@ -175,6 +175,7 @@ main {
 #aboutMe p {
   color: var(--secDark);
   max-width: 67%;
+  line-height: 1.1;
   margin: 1%;
   max-height: 100%;
   font-size: 2.25vw;
@@ -186,6 +187,7 @@ main {
 #aboutMe img {
   object-fit: contain; 
   max-width: 33%;
+  margin-right: 1%;
 }
 
 #contact {
@@ -201,13 +203,22 @@ main {
 
 #contact h2 {
   font-size: 36px;
+  flex: 1 1 auto;
   margin: 2%;
   z-index: 2;
 }
 
 #contact p {
   color: var(--mainDark);
-  font-size: 24px;
+  flex: 1 1 auto;
+  font-size: 2vw;
+  margin: 2%
+}
+
+#contact a {
+  color: var(--mainDark);
+  flex: 1 1 auto;
+  font-size: 2vw;
   margin: 2%
 }
 
